@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerpen dan Puisi - Fedya Jelila</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #ff80bf;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff66b2;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background: #ff3399;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            flex: 1;
+        }
+        .content {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+        }
+        .author {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            .card h2 {
+                font-size: 16px;
+            }
+            .card p {
+                font-size: 12px;
+            }
+            nav a {
+                font-size: 12px;
+            }
+        }
+        footer {
+            background: #ff80bf;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cerpen dan Puisi - Fedya Jelila</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('puisi')">Puisi</a>
+        <a href="#" onclick="showContent('cerpen')">Cerpen</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="content">
+            <h2>Selamat Datang di Kumpulan Cerpen dan Puisi - Fedya Jelila</h2>
+            <p>Pilih menu di atas untuk melihat koleksi cerpen dan puisi saya.</p>
+        </div>
+        <div id="puisi" class="content">
+            <div class="card">
+                <h2>Puisi: Catatan Pena</h2>
+                <p>
+                    Penaku belum kering. 
+                    Sepi malam tak bergeming. 
+                    Tapi penaku, terus melengking.  
+                    Seperti yang kau lihat, aku tak sama sekali merasa asing. 
+                    Tidak ada yang harus bergeming. 
+                    Kini, biarkan aku menjadi bising. 
+                    Menyuarakan suatu makna intrinsik, dari hasil kening. 
+                    
+                    Penaku belum patah. 
+                    Aku tak akan lagi berpatah patah. 
+                    Biarkan serapah, diganti dengan suatu hikmah. 
+                    Tubuh mungilnya yang lemah. 
+                    agar dia tak susah, beri tahu dia, jangan gegabah, jangan pasrah, jangan menyerah. 
+                    lihatlah kebawah. 
+                    Perhatikanlah, Saat ini, Dunia, sedang butuh banyak upah. 
+                    
+                    Penaku belum hilang. 
+                    Pagi harinya, dengan mata  telanjang. 
+                    Dunia menepis semua rasa sakitnya yang telah hilang. 
+                    Tidak ada yang bisa menjadi penghalang. 
+                    Akhirnya, Penaku menang, dia meradang, menendang, menjadi biang. 
+                    Dia Terus menerus Melesat terbang. 
+                    sore sudah menjelang. 
+                    Akhirnya Penaku mendarat juga, dia meninggalkantulisan keramatku, yang kau ketahui sekarang.
+                </p>
+                <p class="author">Oleh Fedya Jelila</p>
+            </div>
+            <div class="card">
+                <h2>Puisi: Kebersamaan Karya</h2>
+                <p>
+                    Setiap yang bertapi 
+                    Akan pulang kedalam palung. 
+                    Ruang raung. 
+                    Rumah yang haru 
+                    Aku pernah mendengar tentang sajak yang indah 
+                    Lantas, apakah aku juga adalah bagian dari mereka. 
+                    Aku tidak pernah tahu, terkhusus , bila aku tak mencobanya. 
+                    akhirnya,aku dapat  menemukannya, iya, itulah dia, Sajak yang mampu mengajak. 
+                    Membawaku menjelang, melayang, lantas, dimana aku sekarang. 
+                    Bahasa ibu, iya, itulah Bahasa yang terlalu banyak iba padaku. 
+                    Terlalu banyak Harapan dalam keparahan. 
+                    Aku disini, menyaksikan semuanya. 
+                    Sampai matta kita mati. Aku baru  saja siuman dari sebuah realita, 
+                    bila kini, aku tidaklah sendirian lagi. 
+                </p>
+                <p class="author">Oleh Fedya Jelila</p>
+            </div>
+        </div>
+        <div id="cerpen" class="content">
+            <div class="card">
+                <h2>Cerpen: Love Bot</h2>
+                <p>
+                    Akhir akhir ini, Matahari Sore, sangatlah Terik. Padahal, ini sore. Tapi, rasanya sangat panas, bahkan panasnya, melebihi siang hari.
+                    Cuaca extrim ini, sangat mengganggu seluruh makhluk hidup yang takut matahari.
+                    Salah satu makhluk yang takut matahari itu, adalah tina.
+                    Ketika teman sebayanyamemilihx school olah raga, ia lebih memilih untuk mengikutix school robotik yang dikenal sulit, ketimbang harus membakar kulitnya dalam x school out door. Meski bukan murid yang pintar, tina hanya mengandalkan uang dan populeritas orang tuanya, untuk tetap membuatnyaexis dan disukai masyarakat sekolah.
+                    Sedangkan tina berjaya dengan uangnya, pesaingnya, fani, berjaya dengan kejeniusanya. Mereka adalah siswi yang terpandang. Keduanya sama kuat, dibidangnya masing masingTapi, jangan selalu berbangga diri, terkadang kita bisa saja berada diposisi teratas, tapi, bila kita menyadarinya, berhati hatilah untuk terjatuh, dan itu adalah kenyataan biasa untuk orang orang seperti tina dan fani.
+                    Keduanya sering bertanding, terkadang fani yang memenangkanya, tapi, tak jarang, tinadapat mengungguli fani. karena sama kuat, persaingan sengit diantara mereka, seakan tidak pernah selesai. Tapi, semuaberubah, mulai dari hari ini.
+                    setelah membeli hamburger dikantin sekolah, tina yang melihat fani sendirian, berniat untuk duduk disamping fani, sambil menghabiskan hamburgernya.
+                    “eh fan, lu udah submit dokumen robot untuk lomba magic tekhnologi belum? ”
+                    Tanya tina, sambil menepuk bahu fani
+                    “ wah, itu mah udah darikemarin ti, emang kenapa sih, kepo banget?”
+                    Jawab fani dengan tatapan yang masih tertuju pada ponselnya
+                    “ oh enggak fan, gue takut lu telat submit aja”
+                    Lanjut tina, memastikan.
+                    “ ya, aku udah submit, sekarang, tinggal tunggu pengumumannya 2 hari lagi ti”
+                    Jelas fani yang masih fokus dengan ponselnya
+                    “ yaudah, bagus itu fan, good luck ya fan”
+                    Balas tina yang mengangkat kedua jempolnya, kepada fani.
+                    2 hari kemudian, tepat jam 15:00 sore, tina dan fani, mulai gelisah, menanti kabar pemenang the magic tekhnologi, yangsangat bergengsi.
+                    Akhirnya, tak lama setelah membuka email, , fani dan tina, sama sama mendapatkan email ucapan selamat, atas lolosnya mereka ke tahap final magic tekhnologi,Yang akan diselenggarakan di losanglles amerika serikat.
+                    Di email tersebut, keduanya juga diminta datang kekantor magic tekhnologi
+                    cabang indonesia, untuk mengambil piagam seleksi nasional.
+                    keesokan paginya, tina dan fani, bangun pagi dengan tak sabar, untuk menerima penghargaan liga nasional the magic tekhnologi.
+                    Hari semakin siang, tina, sudah siap dengan mobil mewah dan sopir pribadinya,
+                    untuk pergi ke gedung the magic tekhnologi indonesia.
+                    Sedangkan tina sangat glamor, fani hanya berpakaian rapi sederhana, dengan kereta listrik yang ekonomis, sebagai transportasi ke kantor the magic tekhnologi indonesia. Jam sekarang menunjukan pukul 12:30, itu berarti, sudah saatnya acara pemberian penghargaan pemenang seleksi nasional the magic tekhnologi indonesia dimulai. Satu demi satu pemenang, naik keatas panggung, untuk diberikan penghargaan. Tak terasa, hari apresiasi pemenang seleksi nasional magic tekhnologi, telah selesai. Setelahparticipan mulai meninggalkan tempat duduknya, fani dan tina yang hendak meninggalkan tempat acara, dibuat terperanjat dengan pengumuman lantang, yang mengikut sertakan nama keduanya. 
+                    “selamat sore, kepada saudari tina, dan saudari fani, mohon untuk segera memasuki ruangan direktur utama. Kepala tim panitia magic tekhnologi indonesia, ingin berbicara dengan saudari berdua. Atas perhatianya, saya ucapkan terima kasih” ujar anownser wanita.
+                    Setelah mendengar namanya disebut, tina dan fani segera bergegas keruangan direktur utama yang dimaksud. Setelah sedikit berkeliling gedung untuk mencari ruangan yang dimaksud, mereka pun sampai diruangan direktur utama.
+                    Didepan pintu, sudah ada pria berjas hitam, dan wanita dengan dress biru,
+                    yang tersenyum pada keduanya, sambil mengarahkan mereka, untuk duduk dikursi
+                    yang telah disediakan. “maaf tina dan fani, saya langsung saja mulai ya” ujar pria berjas hitam, “oh silahkan pak” balas fani, membungkukan badan kepada pria itu.
+                    “baik, fani, tina, saya tertarik dengan robot rancangan kalian, tapi, mengapa hasil presentasi robot yang kalian kirimkan kepada kami, sama persis ya, apa ada yang salah, “ tanya pria yang sama, dengan sesekali mengarahkan pandangannya ke labtop yang berada dihadapannya. “oooh, itu sebenarnya pak, saya dan tina, adalah 1 team, tapi, ada mist komunikasi diantara kami, kebetulan, tina sudah submit, tapi dia tidak memberi tahu saya, jadi, saya submit rancangan yang sama, dihari berikutnya. Saya sangat tidak menyangka ini, dan saya sangat minta maaf terkait kecerobohan kami” ujar fani, sambil menundukan kepala.
+                    “oooh tidak apa apa fani, baik, selamat. Kalian bersiap siap pergi ke california minggu depan ya, jaga kesehatan, dan jangan lupa, terus berlatih. “ lanjut wanita dengan dress biru, sambil bertepuk tangan. “benar tina dan fani. Ini adalah kesempatan, sekarang, saya amanatkan pembuatan visa dan pasport ini, kepada fani, fani, apakah kamu bisa mengurusnya sendiri.”
+                    Timpalpria berjas hitam, sambil mendekati fani.
+                    “maafpak, saya belum pernah keluar negri, saya tidak tahu prosedural kesana, saya rasa, tina lebih cocok untuk mengurus itu, dia sudah beberapa kali keluar negri”tambah fani, yang menepuk bahu tina. 
+                    “oooh tidak apa apa, bagaimana tina, apa kamu bersedia mengurusnya, tenang saja, pihak kami akan membantu kamu bila kamu menemui kesulitan, pertama tama kalian harus membuat pasport dulu ”lanjut wanitaberdress biru, yang mengalihkan pandangannya, kepada tina.“baikbu, saya siap, terima kasih atas kepercayaanyabu” balas tina tersenyum licik.
+                    “ya sudah, kalian bisa pulang sekarang. Hati hati dijalan ya”ujar pria berjas hitam, sambil membukakan pintu ruangan.
+                    Melihat pintu yang terbuka, tina dan fani, segera meninggalkan ruangan tersebut.
+                    Sementara tina berjalan cepat didepan, fani hanya berjalan kecil, dibelakang tina.
+                    Melihat tina yang semakin menjauhinya, fani mulai memanggil tina, “ti iii, tina, tungguin aku doong” seru fani sambil mempercepat langkahnya.
+                    Tapi tina tidak menjawab. Tina terus mempercepat langkahnya kearah parkiran besmen, tapi, fani lebih cerdas, “maaf mas, ada jalan pintas ke parkiran besmen gak ya” tanyafani, pada cleaning service. “oooh, ada dek, ayo saya pandu” 
+                    jawab cleaning service, sambil menyandarkan sapunya, kedinding.
+                    Mereka berdua menyusuri lorong lorongruangan kariawan, hingga mereka keluar diparkiran besmen, “ terima kasih ya mas, saya duluan,saya ada urusan  dengan teman saya” ujar fani, menggenggam tangan cleaning service itu.
+                    Cleaning service itu hanyalah mengangguk,ketika fani mulai meninggalkanya. Tina yang tidak menyadari fani mengambil jalan pintas untuk bertemu dengannya,terus berjalan cepat, sambil menelepon sopirnya.
+                    Dan ketika ia mulai memasuki area besmen, tina dikejutkan oleh fani, yang tiba tiba memeluknya. usai memungkam mulut tina, fani kemudian menarik tina, kesudut besmen. “fan, apa apaan lu ini, gue gak pernah sudih satu team sama lu ya” seru tina, yang memberontak dari dekapan fani. 
+                    “tenang ti, justru aku yang minta kejelasan, kamu nyuri rancangan robotku ya ti, udahlah, jujur aja ti, bukti buktinya udah ada kok, tadi juga udah kebuktikan, kalau kamu dan aku submit rancangan robot yang sama” tanya fani, dengan suara tenang. “iya, emang kenapa, toh gue yang duluan submit, lu aja perancangnya aja lelet bener, padahal Cuma ngirim doan loh, lucu sih lu itu ya fan” timpal tina, sambil menggenggam erat kerah baju fani.
+                    “yasudah, aku sama sekali nggak mempermasalahkan masalah itu ti, aku ikhlas, justru aku minta kita bisa colab bareng, menjadi 1 team proyek robotik ini. Kita bisa saling bantu ti, aku bantu kamu dalam perancangan, kamu bantu aku untuk urus persyaratan ke amerika kita sama sama untung ti” jelas fani yang tiba tiba memeluk tina. “yaudahlah, nanti kita bicara lagi, gue punya banyak urusan sama lu” lanjut tina, melepaskan peluk fani. Setelah mengatakan itu, tina lanjut berjalan menujumobilnya. Sementara itu, fani yang melihat tina masuk kedalam mobil segera memesan ojek online untuk mengantarkannya pulang.
+                    setelah kejadian itu, mereka tidak lagi salingbicara,
+                    Memang, mereka sering bertemu disekolah, namun, tina tidak menghiraukan kehadiran fani. Melihattina yang selalu menjauhinya, fani tidak ambil pusing. Dia memilih untuk mengikuti arus emosi tina, sambil berharap tina akan kembali bicara padanya. sesekali, fani mengirim pesan online kepada tina. Meski tidak dibalas oleh tina, fani tidak berhenti untuk mengirimi tina kabar terbaru, tentangprojek robotik mereka. Hingga, 2 hari sebelum hari keberangkatan mereka ke amerika, tina mengirimi fani beberapa foto, gambar tersebut adalah gambarvisa milik fani, melihat visanya telah jadi,fani sontak kegirangan tak sadar, ia meneteskan air mata, yang mulai membasahi layar  ponselnya. Fani pun membalas pesan tina, dengan emoticon hati merah, dan tangan terlipat, untuk menyampaikan rasa terima kasihnya, pada tina. Meski lagi lagi tina tidak membalas pesannya, fani tak merasa khuatir, fani mengalihkan penasarannya, dengan melanjutkan mengepak barang barangnya, yang akan ia bawa ke amerika.
+                    Ketika hari keberangkatan tiba. Fani diantar oleh ayahnya. Mereka sampai dibandara tepat waktu. sesuai arahan dari panitia, mereka segera memasuki terminal3.
+                    Namun, fani tidak kunjung menemukan tina, dan teman teman lainya, yang mengikuti magic tekhnologi diamerika. Tak lama setelah menyebarkan dirinya kehampir seluruh penjuru terminal 3, seseorang mulai mendekati fani. ,
+                    “ hi, ini fani ya, aku elena, aku ikut lomba microsoft ecxel, kamu peserta robotik ya, “ sapa elena, dengan senyum manis diwajahnya.
+                    “iya kak, aku fani, omong omong, kita kumpul dimana ya kak” tanya fani menjabat tangan elena. “ oooh, kamu belum kumpul toh, yuk ikut aku, kita harus naik satu lantai ya fan” jawab elena, menggandeng tangan fani.
+                    Mendengar itu, Fani dengan antusias segera mengikuti arahan elena.
+                    Hingga akhirnya, keduanya sampai juga di kerumunan peserta dan oficial the magic tekhnologi. Satu demi satu, peserta dan oficials diabsen. Tapi, tidak terdengar nama fani dipanggil. Mengetahui itu, fani yang jengkel, segera mendatangi pengabsen, untuk mencari tahu. “kak, maaf, kok nama saya tidak ada di list ya” tanya fani panik“oooh, maaf, kamu fani ya, boleh aku minta pastport dan visamu sayang”jawab kakak panitia menenangkan fani. 
+                    “waah, visa dan pastportku ada di tina kak” balas fani, yang bingung. 
+                    “ooh baik,tapi, saya kok belum ketemu dengan tina ya,kamu tahu nggak tina dimana yafan ?” tanya kakak panitia sambil melihat daftar peserta
+                    yang telah tiba dibandara. “ tapi, tunggu, tunggu kkak fani, oh ya, nama saya enzi, kebetulan, saya tetangganya kak tina. Maaf banget nih kak fani, saya lupa ngasih tahukepada kakak, kak tina sudah berangkat ke california dari 2 hari yang lalu. Katanya, dia sekalian liburan. Jadi nggak ikut kontingen indonesia, katanya, dia berangkat ke california pakai dana pribadi. “ lanjut salah satu peserta yang menghampiri fani. “apa kamu bisa menghubungi tina sekarang fani?” tanya kakak panitia dengan lembut. “waah, aku sering chat dia kak, tapi selalu nggak dibalas, terakhir kali, dia ngirimin foto visaku. Tapi, oh iya, aku lupa ngiingetin tina, aku kan belum bikin pastport kak. Aduuuh, gimana ya kak”lanjut fani gemetar.
+                    “ hahahahahaha, fani sayang, tidak akan ada visa kalau belum ada pastport. Kamu sedang bercanda ya, hati hati sayang, kamu bisa saja ditipu. Siapa pun bisa memalsukan dan mengedit data diri”
+                    Lanjutkakak panitia, sambil merangkul fani. “oooh, gitu ya kak, enzi, aku minta tolong telepon tina dong  dong, aku udah coba telpon tina tapi memanggil terus nih” ppinta fani,dengan sungguh sungguh.
+                    “ ayooo ayoo team indonesia, pesawat 30 menit lagi akan terbang. Kita sudah di invite pihak maskapai untuk naik ke pesawat” seru salah satu panitia, dengan bendera indonesia di tangan kirinya. “ aduuuh, gimanadong ini zi, , pesawatnya udah mau terbang ya” ujar fani, sambil memegangi dahinya.
+                    “ hallo, kak tina, ini ada kak fani ingin bicara. Aku kasih hand phoneku ke kak fani ya kak”ujar enzi, menelepon tina.  
+                    “aduuhzi, aku lagi seru nih, aku udah sampai pantai florida. Waah, seru banget nih zi, udah dulu ya, nanti kita sambung lagi, aku punya banyak cerita zi” jawab tina, yang tidamenghiraukan enzi dan fani.
+                    “ waah, kaco sih, teleponku langsung dimatiinsama kak tina, aku minta maaf ya kak fani, nanti, kalau kita sudah sampai amerika, aku telpon kakak lagi, aku janji kok kak” lanjut enzi, sambil menggendong tas ranselnya. 
+                    “gimana dek, bisa diusahain gak?” tanya ayah fani, yang mengusap lembut kepala anaknya. “Nggak tahu tuh ayah” balas fani, dengan air mata yang mulai membasahi pipinya. “gak apa apa sayang, yuk kita pulang aja, mungkin belum rezekinya kan” lanjut ayah fani, sambil memeluk fani. Mendengar itu, fani mulai berusaha move on dari kejadian yang baru terjadi, setelah melepas peluk ayahnya, sambil mengusap air matanya, fani berjalan kembali ke mobilnya, dengan ayahnya menggandeng tangan kananya. Sementara itu, diamerika, seusai bermain main di pantai, tina dengan teman teman bulenya, kembali ke hotel, sambil membagi cerita dan humor yang lucu. Senja mulaitiba, tina baru saja selesai mandi, ketika ia ingat, hari liburannya diamerika, akan segera usai, karena, besok, ia harus bertanding, di the world magic tekhnologi competision. Dengan panik, ia mulai membuka rancangan robot,yang dikirimkan oleh fani. Perlahan lahan, tina mempelajari kode demi kode pemograman yang disusun fani, tapi, ia tidak kunjung mengerti. Dengan gemetar, ia menelpon fani. Tapi, fani tidak kunjng mengangkat teleponya. Tina yang kalut,segera menghubungi enzi, untuk meminta saran. Tak butuh waktu lama, dari pintu utama kamarnya, tina mendengar ketukan yang sangat keras. :hey, siapa itu, ini sudah malam” teriak tina, dari dalam kamar. “ ini enzi, cepat buka pintunya kak” timpal enzi, sambil masih mengetuk pintu kamar tina. “ eh, kamu zi, kamu udah sampe amerika aja ya, baru aja aku chat, eh sekarang udah depan pintu aja” lanjut tina, sambil membuka pintu kamar.
+                    “wah, ngomongnya didepan pintu, aku nggak diajak masuk nih” sindir enzi, sambil menyeka keringatnya.“eeeh, maaf zi, yuk masuk” ajak tina yang malu malu.
+                    “kak ti, kakak nih maunya apa sih, kakak udah nyuri karya kak fani, sekarang kakak dikasih kepercayaan untuk urusin visa aja gak becus, terus sekarang malah liburan, maksudnya apaan ini kak” tegas enzi, yang langsung duduk di sova.
+                    “ya, gimana ya zi, gue kesel banget sama si fani, dia selalu ngerebut kebahagiaan gue, kalau gue suka sama cowok, cowok itu malah suka sama dia, kalau gue ikut lomba, dia malah yang jadi pemenang, dansaat gue mau jadi orang baik, pasti kebaikan gue selalu dibanding bandingin sama kebaikan dia.  Kesel gue zi, 
+                    ini lagi nih, gue ikut lomba the magic tekhnologi, dan lagi lagi, rancangan fani lebih mutahir, gue gak terima, itu makanya gue mutusin nyuri karyanya, eh, malah dia bilang ke panitia, kalau gue dan dia satu team. Gue nggak terima zi, gue gak sudih satu team sama dia” jelas tina yang emosional.
+                    “kakak gak punya pilihan lain kan, aku tahu, kakak pasti nggak nguasain kodinganya kan, kakak pasti sekarang lagi kebingungan kan, kakak pasti sekarang nyerah. Udahlah kak, dari pada stres sendiri, kakak mendingan sekarang invite kak fani kesini, orang tua kakak kan pejabat imigrasi, minta aja mereka buat pastport dan visa last minutes untuk kak fani, nanti, kita bicara lagi kalau kak fani udah nyampe sini” pinta enzi,dengan perasaan jengkel. 
+                    “jujur ya zi, kalau bukan lu yang nyuruhgue, gue nggak akan lakuin ini, dih, ogah banget ngeinvite dia” ujar fani, yang cemberut.
+                    “ gimana nih, masih semangat lomba, apa udah nyerah” tanya enzi, menyindir tina
+                    ” iya, iya zi, lu belum tahu aja sih, pastport dan visa fani itu udah ada sebenarnya zi, Cuma, gue sembunyiin aja di berangkasrumah. Habisnya pihak magic tekhnologi nanyain terus, ya terpaksalah gue bikinin juga buat si fani” jelas tina, sambil membukakunci sidik jari ponselnya. “ oooh, bagus dong kak, ayo cepet kak, telepon orang rumah,sebentar lagi, kalian harus latihan” seru enzisambil membuka pintu kamar. “eeh, kamu mau kemana zi,” tanya tina, menyusul enzi ke pintu kamar. Tapi, enzi langsung menutup pintu. Dia tidak lagi menghiraukan perkataan tina, menyaksikan itu, tina tahu apa yang harus ia lakukan. Tina segera meminta ajudannya mengambil pastport dan visa fani, dan kemudian meminta mereka menjemput fani, untuk pergi kebandara. 
+                    kembali ke indonesia, fani sangat terkejut melihat sejumblah pria dengan pakaian rapi, mengetuk pintu rumahnya. “maaf pak, cari siapa ya?” tanya fani ketakutan.
+                    “ kami mencari nona fani, kamu fani ya” jawab salah satu pria.
+                    “ iya saya fani. Saya tidak mengerti, apa maksud kalian”balas fani, dengan keheranan. “hallo nona tina. Kami sudah dirumah fani,silahkan nona berbicara dengan fani” ujar pria lain,  yang berbicara dengan tina, ditelepon. “oooh iya pakagus, silahkan saja pak, mana faninya” balas tina ramah.
+                    “hi ti, kenapa ti, ada yang bisa aku bantu” sapa fani, dengan antusias.
+                    “fan, lu sekarang kebandara ya fan, gue udah siapin semuanya. Lu sekarang kemas barang lu, danmake up yang cantik. Pesawat lu, akan take of 3 jam lagi”jelas tina, dengan terburu buru. “oooh iya ti, gue siap siap dulu ya” balas fani yang kegirangan. “baik fani,  saya tunggu diluar ya” lanjut ajudan tina, sambil mematikanponselnya. Setelah setengah jam bersiap siap, fani, diantar oleh ajudan suruhan tina, segera pergi kebandara, saat jam penerbangan tiba, fani, dititipkan kepada pramugari, selama penerbangan berlangsung. Fani yang baru pertama kali keluar negri, sangatterkejut dengan kemewahan fasilitas kelas bisnis yang diberikan kepadanya. Disaat itu, fani masih
+                    tidak tahu, bila tinalah yang membayar seluruh keperluan fani keamerika.
+                    Sesampainya ia di amerika, fani disambut oleh privat guide yang mengandengnya, hingga sampai ke hotel, tempat tina, enzi, dan kontingen indonesia menginap.
+                    “ hi fani, selamat datang di u s a, lu pasti suka dengan kamar disini” sapa tina dengan ramah. : hi hi ti, aku kangen banget sama kamu, oooh tina, aku pikir aku nggak akan jadi ke amerika. Aku pikir mimpiku pupus ti, makasih ya ti” balas fani sambil memeluk tina dengan erat. “ sudah sudah, kak fani, yuk aku tunjukan kamar kakak, istirahat dan bersih bersih bentaran ya kak, habis ini, banyak hal yang harus kita bertiga selesaikan” timpal enzi, sambil menyeret koper fani. 
+                    tina yang mendengar aba aba dari enzi, segera melepaskan peluk fani, dan mengambil tangan fani, untuk ia gandeng menuju kamar yang telah ia pesan untuk fani. Sesampainya dikamar, enzi  mengajari fani, untuk menggunakan sejumblah fasilitas yang tersedia dikamar yang ditempati fani. Fani yang cerdas, dengan mudah mengerti penjelasan yang diberikan enzi. Sementara enzi mengajari fani, tina membantu petugas hotel menata barang barang fani.
+                    “gimana kak fan, mantap kan kamarnya. Ini kelas bintang 5 diamerika looh kak fan, kalau kakak punya masalah, telepon aja aku, atau tina. Its fine kak fan” ujar enzi senang. “waah makasih banyak ya, aku seneng banget.” Serufani terharu.
+                    “ jangan nangis fan, nanti, kalau kamu selesai beres beres, kamu datengin kamar 326aja ya, itu kamarku. Kita kan mau bicara projek kita kan fan” lanjut tina, mengusap air mata fani. Setelah mengucapkan itu, tina dan enzi, berpamitan kepada fani, dan perlahan menutup pintu kamar fani. Tak lama kemudian, dikamar tina, saat enzi dan tina asyik menonton kartun, mereka mendengar suara ketukan pintu. Enzi tahu, itu pasti fani, dia segera menghampiri pintu, untuk menyapa fani. “ hi kak fani, ayo masuk kak” sapa enzi dengan ramah. “ayo fan, kita mulai dari mana ya fan, gue agak gaptek nih fan” lanjut tina, sambil mengeluarkan alat alat robotik mereka. “ ok ti, kamu udah faham sistem kodingnya belum?” tanya fani sambil menurunkan ranselnya. “nah itu dia fan, gue sama sekali nggak ngerti, gimana ya fan” balas tina, dengan hembusan nafas panjang.
+                    “ ooh, nggak apa apa, yuk kita diskusi bentar, abis itu, aku rencananya, mau mulai latihan untuk peresentasi robot kita” ujar fani, sambil menaruh  tanganya di paha tina. “ waah, kayaknya sudah kondusif ya. Aku cabut dulu ya, aku juga mau latihan nih guys” timpal enzi, mengejutkan fani dan tina. 
+                    “eeeh, zi, jangan pergi dong, gue masih butuhlu” seru tina, yang langsung bangkit dari duduknya. “ ah udah ah, kakak udah gede, pasti bisa lewatin ini semua” lanjutenzi, sambil membuka pintu kamar. “ udahlah ti, dia mau istirahat kali tuh, kita disini latihan berdua nggak apa apa kan” ujar fani, melerai tina yang hendak menyusul enzi. “ bener itu kak ti, aku duluan ya” seru enziyang langsung menutup pintu kamar. Setelah enzi pergi, fani berusaha keras mengajari tina, tapi, tina tidak kunjung mengerti konsep milik fani. “ti, di x school robotik, kamu udah belajar sampai manaya? ” tanya fani keheranan. 
+                    “gue belum belajar apa apa fan, gue ikut x school itu, karena gue pengen dikenal sebagai anak exak yang pinter. Tapi gue sama sekali nggak ngerti apapun.
+                    Gue selama ini pake duit aja biar gue kelihatan jago robotik” jawab tina,yang malu malu. “ooh nggak apa apa ti, ayo kita belajar lagi, kamu pasti bisa. Kamu punya impian jago robotik kan, nah. Ini adalah kesempatan kamu mewujudkan mimpi mimpi mu” ajak fani, menenangkan kebingungan tina. Melihat kesabaran fani, tina terus berlatih, dibawah pengajaran fani. 1, 2, 3, jam telah berlalu. Tapi, tina tak kunjungdapat mengerti.“ fan, udah fan, gue capek, gue nyerah fan, iya iya fan, 
+                    gue ngaku, selama ini gue naif, gue juga terlalu egois fan. Gue mau mengundurkan diri aja fan” pinta tina, dengan keringat dingin menetes dari dahinya. “yaampun tina, ayo ayo istirahat ti, maafin aku ya ti, kamu jangan patah semangat ti, kita pasti bisa lewatin ini bareng bareng. Nanti pagi, aku punya hadiah untuk kamuti” sambung fani, sambil membantu tina berdiri.
+                    Setelah tina terbaring dikasurnya, fani menyelimutinya dengan selimut bulu yang lembut. Dansaat itulah, Tina mulai memejamkan matanya, dan kemudian tertidur dengan lelap. Malam itu, fani bekerja keras menyelesaikan kodingan yang telah ia susun. Fani memperbarui sistem yang dirancang tina, untuk kemudian ia serasikan ke robot yang ia buat. Setelah selesai, fani menguji coba kelayakan robotnya itu. Dan, wow, diluar expektasi, robot yang ia buat sangat berfungsi dengan baik. Dan fani menamainya love bot. love bot, dapat menjadi teman curhat yang menyenangkan, love bot ringandan lentur,sehingga nyaman dipeluk. 
+                    love bot dapat mendeteksi perasaan seseorang dengan getaran suara mimik wajah, dan pengenalan bahasa tubuh. Love bot juga dapat memberikan solusi atas permasalahan pengunanya, dengan fitur penjelajah situs, yang terkoneksi dengan situs kesehatanjiwa, yang disediakan oleh pemerintah amerika. 
+                    Love bot dapat memberikan saran, dan rekomendasi yang akurat, untuk menghibur dan membantu pengunanya menyelesaikan masalahnya, ketika pengunanya kesepian, atau tidak memiliki teman untuk bercerita.
+                    “akhirnya selesai, baiknya aku tidur dikamar tina dulu. Kasihan dia kalau disini sendirian” ujar fani dalam hati. Fani yang lelah, mulai merebahkan badanya diatas sovakamar tina.
+                    Dipagi hari, fani dikejutkan oleh bunyi Tung tung tung, tung tung tung. Itu adalah Suara alaram ponselnya. Fani segera meraih ponselnya. Dan ketika ia telah menggenggam ponselnya. Fani menyadari, bila sekarang adalah jam 7 pagi, fani sangat terkejut. Apalagi pembukaan akan dimulai jam 8 pagi.
+                    Ia bergegasmenyiapkanpakaian tina, dankemudian membangunkannya.
+                    Dengan tergesa gesa, fani pergi kekamarnya, untuk mandi dan berdan dan. Setelah selesai, fani kembali kekamar tina, dan dengan terkejut, fani melihat tina yang membukakan pintu,sambil menutupi mulutnya. “ ti kamu kenapa, kamu mual ya” tanya fani yang kuatir. “iiya fan, gue muntah muntah terus, maklum fan,gue  tadi malam lupa makan malam, sekarang perut gue kkeram banget nih fan” jawab tina lemas.
+                    “ melihat itu, fani dengan cakap membuatkan secangkir teh hangat untuk tina.
+                    Fani memang sangat pengertian, dia duduk disamping tina, dan menenangkan tina, yang mulai menangis. “ti, semalam aku bilang akan kasih kamu hadiah kan, nih coba aja baca rancangan robot kita, aku namain dia love bot. “ ujar fani, menyerahkan kertas bertuliskan tulisan tanganya. “ wah bagus itu fan, gue tahu lupinter banget”lanjut tina, dengan senyum tulus, yang digambarkan oleh lesung pipinya. “aaah, kamu juga sih ti, kita sama sama smart, hahaha” lanjut fani, meremas pipi tina. “terus hari ini presentasinya gimana fan?” tanya tina yang masih kepikiran. “ahh, ntar kamu juga tahu sendiri ti, aku tahu, kamu harus dipaksa. Kali ini, kita pasti berhasil ti” jelas fani dengan suarayang tenang.
+                    “ yaudah ayo fan, kita berangkat fan” ajak tina yang langsung berdiri.
+                    “kamu yakin ti, kamu sudah sehat belum tuh” ejek fani, dengan suaragemulai.
+                    “iiih, udah udah fan, ayo fan, cepetan, nanti kita telat fan” pinta tina yang antusias.
+                    Melihat mata sayu tina yang mulai kembali berbinar. Fani segera mengemasi barang barang mereka, dan bergabung kepada team magic tekhnologi lainya, mereka semua berkumpul di kamar mr jodi, dia adalah ketua kontingen indonesia. Setelah menyuarakan iyel iyel, mereka mulai dengan agenda pertama mereka, yakni mengikutipembukaan lomba tersebut. Setelah semua round down pembukaan dilaksanakan,pada pukul 12 siang, semua kontingen diarahkan untuk makan siang. Semua orangmakan dengan cepat, untuk kemudian bersiapmengikutipengundian nomorpeserta. Tak terkecuali tina, dan fani. 
+                    Tina masih merasa mual, dengan sabar fani menyuapinya suap demi suap makanan, untuk membuat tina kembali semangat  makan.
+                    Disela sela makan, mr jodi, tiba tiba menghampiri tina dan fani 
+                    dengan tergesa gesa. “ tina, fani, ini nomor peserta kalian, kalian dapat nomor 1 ya” ujar mr jodi, menyerahkan nomor peserta. 
+                    “apaah, nomor 1, berarti kita penampil pertama dong mr” tanya tina yang semakin mual. “oooh ya pastinya dong tina, kalian bersiap ya. Saya akan antar kalian ke ball room 2sekarang juga” balas mr jodi, sambil memegangi pundak tina.
+                    Dengan tergesa gesa,mereka bergegas menaiki liv menuju lantai6, tempat ball room 2 berada. Dan saat sampai, mereka langsung disambut panitia the magic tekhnologi, untuk masuk, dan memulai presentasi robot mereka.
+                    Tak lama setelah memasuki ball room, mc lomba memanggil tina dan fani, untuk maju kedepan. Mendengar namanya disebut. Tina dan fani, bergegas naik keatas podium. Setelah berada diatas podium, fani hanya terdiam. Dia tidak bergerak, apa lagi mengeluarkansuara. Tina yang menyaksikan keheningan pada fani, segera membuka presentasi dengan elegan. Setelah presentasi dibuka oleh tina. Fani segera mengambil alih untuk mempresentasikan robot rancangan mereka. Meski pun tidak terlalu paham, tina mulai menemukan celah untuk ikut menjelaskan proyek mereka itu, dengan jelas dan menarik. Setelah selesai, keduanya bergantian menutup presentasi dengan apik. Semua orang disana memberikan standing aplows, kepada mereka.
+                    setelah memberi tanda hormat. Keduanya turun dari podium, dan kembali kepada mr jodi. Mr jodi, sama sekali tidak mengatakan apapun. Kelihatannya, dia agak sedikit kecewa. Tapi, ya, mr jodi tidak benar benar bilang bila dirinya kecewa. Dia hanya tidak menunjukan raut wajah senang. Meski begitu, mr jodi tetap menggandeng tina dan fani, kembali ke kamar mereka. “gimana tadi fan, lu malah diem aja pas awal. Gue dek dekan thau fan” ujar tina kesal.
+                    “ahahahah, kalau aku bicara, kapan kamu berani bicara ti, aku tahu kamu pasti bisa. Buktinya tadi kan, kamu hebat ti” jelas fani yang mengangkat kedua jempol tangannya. Mereka salingbersenda gurau, mereka mulai menggulung gulung diri diselimut, sambil saling menggelitik. Disinilah tina merasakan sesuatu yang hangat. “fan, rasanya seneng banget. Gue nggak pernah benar benar punya teman fan, ya, itu juga karena gue nggak pernah bisa menghargai orang lain. tapi, setelah semuanya, lu mau nggak jadi teman gue” pinta tina sambil menyentuh pipi fani.
+                    “ sebelum kamubilang kayak gitu, kamu udah jadi temanku ti. Dan kamu sebenarnya punya banyak teman, tapi kamu nggak pernah sadar itu ti” jelas fani sambil menurunkan tangan tina di pipi fani. 
+                    “lu bener fan, gue punya banyak teman, tapi sekarang gue jadi tahu, sahabat gue adalah lu fan” lanjut tina menambahkan.
+                    Keduanya saling berpelukan. Hingga tak terasa, mereka telah tertidur dikamar tina.
+                    Setelah terbangun, keduanya segera bersiap siap untuk makan malam.
+                    Mereka mengenakan gaun terindah mereka. sementara tina mengenakan gaun designer. Fani hanya tampil sederhana, dengan gaun bunga bungapanjang andalannya. Tina dan fani terlihat sangat menikmati momen kebersama mereka.
+                    keduanya sangat senang. Mereka berfoto dihampir setiap sudut sudut fotogenik yang ada dihotel tersebut. Tak sengaja, saat berjalan jalan mengelilingi  hotel,
+                    mereka mendapatkan pesan text yang dikirimkan mr jodi, ke group whats app the magic tekhnologi, mr jodi, meminta seluruh peserta untuk segera ke kamarnya, karena, ada penguman penting, yang akan disampaikan mr jodi.
+                    Dengan penasaran, tina dan fani, mulai mempercepat langkah mereka, ke kamar mr jodi, dalam intuisi mereka, ada hal buruk yang akan disampaikan oleh mr jodi.
+                    Sesampainya di kamar mr jodi, ternyata, tina dan fani, adalah peserta terakhir yang tiba, mereka bergabung dengan peserta lain, untuk duduk dikarpet lembut, yang menutupi seluruh lantai kamar hotel tersebut. Setelah semua peserta berkumpul, mr jodi, menghampirimereka. sambil menghelal nafas panjang, mr jodi mulaimenyampaikan maksudnya mengumpulkan seluruh peserta. “anak anak, saya akan membacakan peserta yang lolos saja ya, untuk yang belum lolos kebabak final, kalian sudah free. Baik, yang lolos disini hanya 3 orang. yaitu,enzi ,aisyah,dan vernando. Sisanya, kalian silahkan beristirahat, untuk nama yang saya sebutkan tadi. tetap disini ya, ada hal hal yang akan saya sampaikan”jelas mr jodi, sambil membuka pintu kamarnya. Setelah mendengar pengumuman tersebut. Semua peserta yang tidak mendapatkan kesempatan babak final,langsung meninggalkan ruangan kamar mr jodi, untuk kembali ke kamar mereka masing masing. Malam ini, tina dan fani tidur dikamar masing masing, memang sih, keduanya tidak mengharapkan juara. Tapi, pasti. rasa kecewa itu juga dirasakan mereka. 
+                    malam itu, keduanya pertama kali tidur, dengan love bot, dipelukan mereka. tiba tiba, love bot itu berbunyi, “ jangan menangis kakak, tenang saja, masih ada hari besok, kakak pasti bisa melewatinya” ujar love bot itu, dengan senyuman lebar, yang ia berikan pada kedua perancangnya. Mendengar itu, keduanyamulai tersenyum kecil,Hingga malam semakin larut, dan mereka pun tertidur. Keesokan harinya, tina dan fani, telah merencanakan liburan yang menyenangkan untuk menghibur keduanya. Mereka telah mengepak barang barang yang diperlukan untuk wisata mereka. baru saja sedikit melangkah  keluar dari loby hotel. Keduanya sudah diserbu awak media jepang. Para awak media itu, memisahkan tina dan fani. Keduanya ditarik paksa, untuk diajak sesi wawancara, oleh headline news japan. Melihat tina dan fani dikeroyok, provesor toshii, selaku pemilik dari reach corporasion, segera menyuruh ajudanya untuk membawa tina dan fani kepadanya.
+                    Tina dan fani dibawa menuju menghadap sang provesor, disalah satu ruangan rapat di hotel tersebut. Provesor itu tidak bisa berbahasa indonesia. Tetapi ia memiliki team yang bisa menerjemahkan bicaranya, kedalam bahasa indonesia.
+                    “ adik adik, mohon maaf, itu adalah paparazi, yang ingin mendapatkan informasi tentang provesor toshi, karena, provesor toshi, ingin mengadopsi robot kalian, untuk dipatenkan dijepang, dan ia produksi masal. Gimana, apakah kalian setuju” tanya salah satu transleter pada tina dan fani.
+                    Mendengar itu, tina dan fani, sontaktidak percaya, namun, setelah memeriksa berkas, keduanya sangat terharu, melihat dampak positive, yang dapat diberikan robot rancangan mereka dijepang. maka, tak pikir panjang, keduanya langsung menandatangi beberapa berkas yang diminta provesor toshi. Akhirnya, Bukannya pergi berwisata di amerika, dihari itu juga, keduanya terbang ke jepang, untuk mengurusi hak paten dari
+                    robot mereka. dalam mengurus hak paten, tidaklah mudah,
+                    sambil menunggu hak paten mereka legal, provesor toshi mengajak tina dan fani berkeliling jepang. Dari sana, tina dan fani mengetahui, mengapa provesor toshi tertarik dengan hasil karya mereka. ternyata, tidak banyak masyarakat jepang yang menikah. Mereka lebih menyukai kesendirian, sambil fokus 
+                    mengurusi karir mereka. kehidupan mereka sangatlah sibuk, mereka disiplin, dan pekerja keras. Tapi, banyak diantara mereka yang terlalumemperhatikan pekerjaan, sehingga lupa memperhatikan diri sendiri. Dengan hadirnya love bot buatan tina dan fani, provesor toshi berharap masyarakat jepang bisa tertawa, sebagaimana harusnya mereka layak mendapatkan hak tersebut. 1, 2, 3, minggu telah berlalu, diminggu keempat, setelah melewati proses panjang, tina dan fani, akhirnya mendapatkan paten, atas love bot, yang mereka rancang. 
+                    Dalam acara peluncuran love bot, yang diadakan di kantor reach korporasion tokyo jepang, tina mengatakan. “having a friends is not eazy, and not to hard. Its back to you, will you be a good one for them, will you be someone in their expecktasion. We hope, love bot cud be your digital friends, until you found your self, cud making friends with a real human being”
+                    artinya, “ berteman itu tidak lah mudah, tapi juga tidak sulit.
+                    Akankah kamu menjadi seseorang yang baik untuk mereka, akankah kamu menjadi seseorang sesuai expektasi mereka. kami harap, love bot mampu menjadi teman digital anda, sampai anda mengenali diri anda,
+                    bahwa anda mampu berteman, dengan manusia sungguhan. ”
+                    kata kata itu, disebarkan keseluruh penjuru jepang, yang akhirnya sangat firal.
+                    Tina dan fani, sangatlah terkenal. keduanya menjadi orang yang paling dicari, oleh seluruh media di jepang. Tak lupa, setelah hirup pikup negara jepang telah mereka lalui. Keduanya tak pernah lupa dengan negara asal mereka, yakni, indonesia. Seusai mengurus dan membantu reach corporasion memasarkan love bot, tina dan vani, pulang ke indonesia, untuk mengembangkan love bot, dinegara mereka.
+                    setelah menyelesaikan sekolah menengah akhir, tina,fani, dan provesor toshi,
+                    mulai memperluas daerah distribusi love bot. Sampai saat ini, love bot telah terrjual dilebih dari 22 negara didunia. Oooh, tak lupa, tina dan fani, kini telah menjadi seorang maha siswi. Sementara tina mengambil peminatan sikologi, fani memilih tekhnik informatika, sebagai peminatan kuliahnya.
+                    Dengan ilmu kesehatan mental dan ilmu kesehatan digital. Keduanya mendedikasikan diri dan usianya, untuk menghapuskan kesepian dan rasa tak berharga, dalamdiri setiap individu, melalui pendidikan, dan komunikasi yang berkualitas. Di salah satu seminar hari digitalisasi internasional, di busan, korea selatan, diakhir pidatonya, fani berkata. “Kita adalah istimewa. Kita punya wibawa, kita bisa tertawa. Perhatikanlah hal hal besar yang membahagiakan dalam hidup. Maka, tidak akan ada waktu untuk peduli dengan hal hal menyedihkan yang justru porsinya sangat kecil,bila dibandingkan dengan hal hal yang membahagiakan di hidupmu. Kamu tahu, Aku pernah menjadi seseorang yang sangat beruntung.
+                    Tapi, semua itu tak ada nilainya lagi, ketika aku melaluinya sendiri.
+                    Ya, dibalik itu, aku tahu tuhan punya alur ceritanya sendiri.
+                    Dan lihatlah kita sekarang. Marilah kita rayakan setiap hari, dengan tersenyum” 
+                    Selesai.
+                </p>
+                <p class="author">Oleh Fedya Jelila</p>
+            </div>
+            <div class="card">
+                <h2>Cerpen: Jangan Ngelamun</h2>
+                <p>
+                    Seberapa sering kamu melamun? Hayoo, Sering, atau Cuma kadang kadang?
+                    Situasi apa sih yang bikin kamu melamun? Terus, ada yang suka ngagetin kamu gak?
+                    Kamu yang ngelamunya sedikit, mungkin gak bisa ngerasain perasaan mereka 
+                    yang dikit dikit ngelamun. Kebetulan, aku adalah expertis ngelamun, 
+                    aku bahkan bisa menghabiskan berjam jam, hanya diam sambil melongo dikasurasrama. 
+                    Oh ya. Perkenalkan, namaku fedya, aku duduk dikelas 12 sekolah menengah atas, 
+                    dan selainmenjadi siswi, aku juga adalah seorang santri, disalah satu pondok pesantren terkemuka dikotaku. 
+                    Percaya atau tidak. Kebiasaan melamun ini, terjadi ketika aku masih dibangku sekolah menengah awal. Dan sayangnya, kebiasaan ini, terusaku lakukan, sampai aku duduk dibangku sekolah menengah atas. Tepatnya, ketika virus covid 19 merebak, 
+                    dan aku harus terpaksa sekolah online, dan rasanya, oh, sangatmembosankan, 
+                    akhirnya, sembari mendengarkan guru menyampaikan materi di kelas online, 
+                    bahkan, sambil ujian pun, aku tak trasa melamun. 
+                    aku rasa, melamun merukpakan pelampiasan tubuh dan pikiranku, yang terlalu pasif. 
+                    Jangan salah, Aku juga telah berusaha meghilangkan kebiasaan ini, tapi, oh, percayalah, ini terlalu sulit. Aku yang kesepian, memutuskan untuk bersekolah, sambil  pesantren. Selain untuk memperdalam ilmu agama. Dengan menempuh pendidikan di pesantren, aku harap, dengan aku pesantren, aku akan punya lebih banyak teman yang nyata, 
+                    setidaknya, hidupku akan menjadi lebih aktif, dan berisik. 
+                    Ya, pada 1, 2, 3, hari hari awalku dipesantren. Memangsesuai expektasi awal. 
+                    Tapi, setelah seminggu aku dipesantren. Aku mulai kesulitan beradaptasi. 
+                    Rasa rindu rumah, dan kesulitan mengikuti pelajaran, membuatku kembali menyendiri, 
+                    dan pada akhirnya, aku kembali melamun. 
+                    Tak ayal, karena kebiasaan unikku itu, aku sering dikerubuti setan
+                    Padahal, posisinya, aku sedang di pesantren loh! 
+                    Sampai sekarang, Aku pun bertanya tanya, mengapa Masih saja banyak setan yang kebal dengan suasana pesantren, yang dikenal agamis. 
+                    Entahlah, apakah setan setan itu muslim, bila iya, apakah setan muslim juga mengganggu manusia, aku rasa, gak gitu deh!
+                    Memingat wajah melamunku terlihat seperti orang melongo. 
+                    Aku rasa, Setan setan itumengira, saat melamun, pikiranku kosong. 
+                    Wah! Itu sama sekali tidak benar. 
+                    Nyatanya, Pikir ini mengambang bebas, memikirkan cerita cerita konyol, 
+                    yang membuat aku terus menerus terkikik kikik sendiri
+                    lebih dari itu, mengingat sikap narsistik yang kerab ditunjukan kalangan kekinian. 
+                    Aku rasa, setan setan jaman now, juga merasakan yang sama deh!
+                    terkadang, karena narsistiknya, setan setan itu tak tahan menampilkan dirinya padaku. 
+                    ada yang menyamar menjadi silumanlemari baju, silumanponsel, 
+                    siluman tukang macaroni telur keliling, , siluman lampu, dan masih banyak lagi. 
+                    Kadang tuh, kalau lagi ngelamun, entah tiba tiba mati lampu, entah tiba tiba aku kejedot lemari, entah tiba tiba ponselku berdering, 
+                    Hingga, tiba tiba aku tak terasa membeli makaroni keliling, sampai boke. 
+                    Ada ada aja tuh setan, kayaknya gak mau banget aku menghayal lepas
+                    Sementara setan setan itu gak mau aku ngelamun dengan tenang. 
+                    Setan setan lain, seperti siluman pak guru, siluman meja kelas, dan silumankipas angin, 
+                    Memiliki gangguan lain, yang memperlama durasi lamunanku. 
+                    Kalau gak perccaya, nih, aku certain kronologingelamunku yang palinghebat. 
+                    Waktu itu, dengan lembutnya, pak guru lagi serius seriusnya menerangkan Pelajaran. 
+                    Dengan masa bodo, aku menyandarkan kepalaku diatas tangan, yang ku silakan diatas meja kelas, 
+                    mataku  yangringan, berbanding terbalik, dengan beratnya materi yang disampaikan oleh pak guru. 
+                    Suasana yang mendukung, membuatku mulai beraksi dengan imajinasi cihuyku. 
+                    terus pas banget lagi, tuh kipas angin ngarah tepatke wajah dan berputar, melewati punggung, dan menembus kerudungku. 
+                    Duh semilir geboynih, ini sih devenisi kesempurnaanyang hakiki. 
+                    Aku mulai menghayal. Ketika selesai, akumulai menghela nafas panjang. 
+                    dan saat itulah, aku mulai menyadari, Bila aku sudah terlalu lama diam. 
+                    baru saja siuman, tiba tiba, jelas kudengar azan asyar berkumandang. 
+                    Aku menyadari, ini adalah rekor ngelamun terlamaku. Yakni, 5 jam. 
+                    Sebagai konsekuensi, ustadz menahan ponselku, sampai hari libur dimingguberikutnya. 
+                    sungguh menyedihkan. Tapi, aku tetap sabar, dan legowo menjalankan takdir pahit ini. 
+                    Gara gara tragedy itu, aku jadi heran sama setan setan disekitarku. 
+                    Ampun deh ! kok ssetan setan itu betah banget ngikutin lamunan harianku ya?
+                    Kalo gitu, aku jadi ngeri, mereka bisa menjalar ke orang yang deket sama aku gak ya?
+                    Ya, semoga saja tidak. 
+                    Setelahagak kesal pada 2 jam pertama. Kini, justru aku sangat berterima kasih pada tragedi itu. Karena kemauan kuat untuk menggunakan ponsel tanpa diganggu ustadz, aku mulai mengatasi kecanduanku untuk bermalas malasan, dan melamun. 
+                    percayalah, tidak ada yang tidak mungkin bila kita berusaha, dan memaksa diri. 
+                    Mulai dari saat itu, Hari hariku mulai disibukan dengan seluruh aktivitas produktif. 
+                    Mulai dari menjadi pengurusdiberbagai organisasi pendidikan, hingga mengikuti lomba lomba, dan bahkan mengajarkan bahasa inggris, , dihari libur. 
+                    Dan, aku berhasil. Aku bahkan mendapatkan sejumblah penghargaan atas produktivitas, dan dedikasi sosial, yangkuberikan. 
+                    Orang orang yang dulu menganggap diriku  remeh, kini, mereka justru belajar padaku. 
+                    Itu merupakan pencapaian ajaib bagiku. Sekarang, bagaimana dengan dirimmu. 
+                    Apakah kau harus menunggu kecanduan melamun sepertiku. Masih untung aku menyadari kecanduanku itu, dan langsung memperbaikinya. 
+                    Kalau tidak, aku mungkin sudah gila. 
+                    Maka, ayo, buat perubahan, minimal 1 % saja perharinya. 
+                    Bila tak bisa juga, ikuti aku. Jangan malas, dan paksakan dirimu untuk berubah. 
+                    Karena, Bila bukan kamu, siapa lagi yang akan memenangkan kompetisi di dunia ini.
+                </p>
+                <p class="author">Oleh Fedya Jelila</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cerpen dan Puisi - Fedya Jelila</p>
+    </footer>
+
+    <script>
+        function showContent(id) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'flex';
+        }
+        // Default to show home content
+        showContent('home');
+    </script>
+</body>
+</html>
